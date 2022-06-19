@@ -15,10 +15,10 @@ env:
   TF_VAR_aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
 jobs:
-  uploadLogic:
+  terraform:
     name: 'Terraform'
-      runs-on: ubuntu-latest
-      timeout-minutes: 20
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       # Checkout
